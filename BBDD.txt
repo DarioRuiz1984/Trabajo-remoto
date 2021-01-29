@@ -11,3 +11,6 @@ SELECT 'DRL' ini, rpad(substr(modelo, 1, 10), 15, ' )modelo,
 substr(version, 1.15)version, 
 to_char (emisionCO2_gpkm/10, '999I999' ) "dag CO2/Km",  rpad('I' , round(emisionCO2_gpkm'10), ' ' Grafica
 from modelos where marca like lower ( ' _marca ' ) ;
+
+
+Practica 4
