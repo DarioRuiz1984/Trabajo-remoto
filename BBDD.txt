@@ -1,0 +1,13 @@
+clear scr 
+set linesize 120 
+set pagesize 60 
+accept ead_marca char prompt 'Teclee el inicio de una marca de coches: ' 
+set verify off 
+COL modelo FORMAT a10 
+COL version FORMAT a15 
+COL grafica FORMAT a30
+COL “DAG CO2/Km” FORMAT a10
+SELECT 'DRL' ini, rpad(substr(modelo, 1, 10), 15, ' )modelo, 
+substr(version, 1.15)version, 
+to_char (emisionCO2_gpkm/10, '999I999' ) "dag CO2/Km",  rpad('I' , round(emisionCO2_gpkm'10), ' ' Grafica
+from modelos where marca like lower ( ' _marca ' ) ;
